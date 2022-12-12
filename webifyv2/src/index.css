@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "GothamRounded-Bold";
+  src: local("GothamRounded-Bold"),
+  url("./fonts/GothamRounded-Bold.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "GothamRounded-BoldItalic";
+  src: local("GothamRounded-BoldItalic"),
+  url("./fonts/GothamRounded-BoldItalic.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "GothamRounded-Light";
+  src: local("GothamRounded-Light"),
+  url("./fonts/GothamRounded-Light.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "GothamRounded-LightItalic";
+  src: local("GothamRounded-LightItalic"),
+  url("./fonts/GothamRounded-LightItalic.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "GothamRounded-Medium";
+  src: local("GothamRounded-Medium"),
+  url("./fonts/GothamRounded-Medium.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "GothamRounded-MediumItalic";
+  src: local("GothamRounded-MediumItalic"),
+  url("./fonts/GothamRounded-MediumItalic.otf") format("opentype")
+}
+
+
