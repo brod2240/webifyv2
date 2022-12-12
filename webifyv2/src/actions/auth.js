@@ -1,8 +1,6 @@
 
 export const spotifyAuth = () => {
 
-    console.log("in auth function");
-
     const CLIENT_ID="554e30d906e84b3c9ef9e034c656721d"
     const REDIRECT_URL="http://localhost:3000/"
     const API_URL="http://accounts.spotify.com/authorize"
