@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { spotifyAuth } from '../actions/auth';
-import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Typed from 'react-typed';
 
 const Landing = () => {
-    const [ token, setToken ] = useState('');
-    const navigate = useNavigate();
-
-    useEffect(() => {
-      const hash = window.location.hash;
-      if (hash) {
-        setToken(hash.substring(1).split("&")[0].split('=')[1]);
-      }
-    }, []);
 
     const clicked = (e) => {
         e.preventDefault();
@@ -24,7 +14,6 @@ const Landing = () => {
      <Wrapper>
         <Title><Typed strings={["Get Great Artist Recommendations", "with", "Webify"]} typeSpeed={50} backSpeed={50} /></Title>
         <Button onClick={e => clicked(e)}>login</Button>
-        { !token ? navigate('/') : navigate('/home')}
       </Wrapper>
     </>
   )
