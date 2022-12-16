@@ -45,6 +45,32 @@ export const getTopArtists = async (token)  => {
     } catch (err) {
        console.log(err);
     }
-
    
+}
+
+export const getRelatedArtists = async (artist_id, token) => {
+    try {
+        const res = await axios.get(
+            `https://api.spotify.com/v1/artists/${artist_id}/related-artists`,
+    
+            {
+                headers: {
+                    Authorization: "Bearer " + token,
+                    "Content-Type" : "application/json",
+                },
+            }
+        );
+
+       const items  = res.data.artists;
+        const artists = items.map(({ name, id, images }) => {
+            return { name, id, images };
+        });
+
+        console.log(artists)
+
+    return artists;
+    
+    } catch (err) {
+       console.log(err);
+    }
 }

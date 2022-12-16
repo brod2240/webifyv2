@@ -38,7 +38,7 @@ const Home = () => {
                     transition={{duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5}}
                     className="info-hover app__flex" 
                   >
-                    <a onClick={() => navigate('/web', {state: {artist_id: id}})}>
+                    <a onClick={() => navigate('/web', {state: {artist_id: id, access_token: token}})}>
                       <motion.div
                         whileInView={{scale: [0, 1]}}
                         whileHover={{scale: [1, 0.9]}}
